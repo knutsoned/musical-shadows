@@ -10,7 +10,7 @@ export class Defaults {
     new DirtSample('M1 Organ Stab Vinyl Synths Fmaj9 C2.wav', 'Vinyl'),
     new DirtSample('55_BillyZaneBass_ARP2600_G2.wav', 'Zane'),
     new DirtSample('21_Sehnsucht_ARP2600_A-1.wav', 'Sehnsucht'),
-    new DirtSample('95 Acoustic Guitar Mirage B5.wav', 'Guitar'),
+    new DirtSample('95 Acoustic Guitar Chorus Mirage B5.wav', 'Guitar'),
     new DirtSample('Orbit Keys S950 C4.wav', 'Orbit'),
     new DirtSample('Stutter Bass Mirage C2.wav', 'Stutter'),
   ] as const;
