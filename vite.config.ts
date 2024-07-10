@@ -5,7 +5,7 @@ import checker from 'vite-plugin-checker';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/soundbored/', // GH-pages location
+  base: '/musical-shadows/', // GH-pages location
   plugins: [solidPlugin(), tsconfigPaths(), checker({ typescript: true })],
   define: { 'process.env': {} },
 });

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@solid-primitives/keyboard':
+        specifier: ^1.2.8
+        version: 1.2.8(solid-js@1.7.3)
       '@solid-primitives/pointer':
         specifier: ^0.2.11
         version: 0.2.11(solid-js@1.7.3)
@@ -41,7 +44,7 @@ importers:
         version: 1.5.6
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.59.2
-        version: 5.59.2(@typescript-eslint/parser@5.59.2)(eslint@8.39.0)(typescript@5.0.4)
+        version: 5.59.2(@typescript-eslint/parser@5.59.2(eslint@8.39.0)(typescript@5.0.4))(eslint@8.39.0)(typescript@5.0.4)
       '@typescript-eslint/parser':
         specifier: ^5.59.2
         version: 5.59.2(eslint@8.39.0)(typescript@5.0.4)
@@ -74,7 +77,7 @@ importers:
         version: 4.3.3
       vite-plugin-checker:
         specifier: ^0.5.6
-        version: 0.5.6(eslint@8.39.0)(typescript@5.0.4)(vite@4.3.3)
+        version: 0.5.6(eslint@8.39.0)(optionator@0.9.1)(typescript@5.0.4)(vite@4.3.3)
       vite-plugin-eslint:
         specifier: ^1.8.1
         version: 1.8.1(eslint@8.39.0)(vite@4.3.3)
@@ -401,6 +404,7 @@ packages:
   '@humanwhocodes/config-array@0.11.8':
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -408,6 +412,7 @@ packages:
 
   '@humanwhocodes/object-schema@1.2.1':
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    deprecated: Use @eslint/object-schema instead
 
   '@jridgewell/gen-mapping@0.3.3':
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
@@ -457,6 +462,16 @@ packages:
     peerDependencies:
       solid-js: ^1.6.12
 
+  '@solid-primitives/event-listener@2.3.3':
+    resolution: {integrity: sha512-DAJbl+F0wrFW2xmcV8dKMBhk9QLVLuBSW+TR4JmIfTaObxd13PuL7nqaXnaYKDWOYa6otB00qcCUIGbuIhSUgQ==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
+  '@solid-primitives/keyboard@1.2.8':
+    resolution: {integrity: sha512-pJtcbkjozS6L1xvTht9rPpyPpX55nAkfBzbFWdf3y0Suwh6qClTibvvObzKOf7uzQ+8aZRDH4LsoGmbTKXtJjQ==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
   '@solid-primitives/pointer@0.2.11':
     resolution: {integrity: sha512-5eIB99rVeCbcSIZ/Ux7PGijnMjVOnhyffD2iAuhRDfUoFXQxXkNeOaeilg6DZ8/i83HY4R59Pvvv1kJBAJiojQ==}
     peerDependencies:
@@ -477,6 +492,11 @@ packages:
     peerDependencies:
       solid-js: ^1.6.12
 
+  '@solid-primitives/rootless@1.4.5':
+    resolution: {integrity: sha512-GFJE9GC3ojx0aUKqAUZmQPyU8fOVMtnVNrkdk2yS4kd17WqVSpXpoTmo9CnOwA+PG7FTzdIkogvfLQSLs4lrww==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
   '@solid-primitives/static-store@0.0.2':
     resolution: {integrity: sha512-JR51MmoZbFWE7fmzm0NnfS4RuLHpzXpPqAb7RJu3fHDGHp+q7v4KylseULcailINzDIosHQXbpiDQlj2Lx9zbQ==}
     peerDependencies:
@@ -484,6 +504,11 @@ packages:
 
   '@solid-primitives/utils@6.1.0':
     resolution: {integrity: sha512-uTikKFrq33UO+MnKt2WzZr9WYbQe5YX58ytGkL+29DL6o0pZs1wrICbd4ymzSm8azqzMcQqEQOL3HLWjuv9tLw==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
+  '@solid-primitives/utils@6.2.3':
+    resolution: {integrity: sha512-CqAwKb2T5Vi72+rhebSsqNZ9o67buYRdEJrIFzRXz3U59QqezuuxPsyzTSVCacwS5Pf109VRsgCJQoxKRoECZQ==}
     peerDependencies:
       solid-js: ^1.6.12
 
@@ -695,7 +720,7 @@ packages:
     engines: {node: '>= 12'}
 
   concat-map@0.0.1:
-    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
+    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
 
   convert-source-map@1.9.0:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
@@ -914,6 +939,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
@@ -994,6 +1020,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -1319,6 +1346,7 @@ packages:
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rollup@2.79.1:
@@ -2012,6 +2040,18 @@ snapshots:
       '@solid-primitives/utils': 6.1.0(solid-js@1.7.3)
       solid-js: 1.7.3
 
+  '@solid-primitives/event-listener@2.3.3(solid-js@1.7.3)':
+    dependencies:
+      '@solid-primitives/utils': 6.2.3(solid-js@1.7.3)
+      solid-js: 1.7.3
+
+  '@solid-primitives/keyboard@1.2.8(solid-js@1.7.3)':
+    dependencies:
+      '@solid-primitives/event-listener': 2.3.3(solid-js@1.7.3)
+      '@solid-primitives/rootless': 1.4.5(solid-js@1.7.3)
+      '@solid-primitives/utils': 6.2.3(solid-js@1.7.3)
+      solid-js: 1.7.3
+
   '@solid-primitives/pointer@0.2.11(solid-js@1.7.3)':
     dependencies:
       '@solid-primitives/event-listener': 2.2.10(solid-js@1.7.3)
@@ -2036,12 +2076,21 @@ snapshots:
       '@solid-primitives/utils': 6.1.0(solid-js@1.7.3)
       solid-js: 1.7.3
 
+  '@solid-primitives/rootless@1.4.5(solid-js@1.7.3)':
+    dependencies:
+      '@solid-primitives/utils': 6.2.3(solid-js@1.7.3)
+      solid-js: 1.7.3
+
   '@solid-primitives/static-store@0.0.2(solid-js@1.7.3)':
     dependencies:
       '@solid-primitives/utils': 6.1.0(solid-js@1.7.3)
       solid-js: 1.7.3
 
   '@solid-primitives/utils@6.1.0(solid-js@1.7.3)':
+    dependencies:
+      solid-js: 1.7.3
+
+  '@solid-primitives/utils@6.2.3(solid-js@1.7.3)':
     dependencies:
       solid-js: 1.7.3
 
@@ -2079,7 +2128,7 @@ snapshots:
 
   '@types/semver@7.3.13': {}
 
-  '@typescript-eslint/eslint-plugin@5.59.2(@typescript-eslint/parser@5.59.2)(eslint@8.39.0)(typescript@5.0.4)':
+  '@typescript-eslint/eslint-plugin@5.59.2(@typescript-eslint/parser@5.59.2(eslint@8.39.0)(typescript@5.0.4))(eslint@8.39.0)(typescript@5.0.4)':
     dependencies:
       '@eslint-community/regexpp': 4.5.1
       '@typescript-eslint/parser': 5.59.2(eslint@8.39.0)(typescript@5.0.4)
@@ -2093,6 +2142,7 @@ snapshots:
       natural-compare-lite: 1.4.0
       semver: 7.5.0
       tsutils: 3.21.0(typescript@5.0.4)
+    optionalDependencies:
       typescript: 5.0.4
     transitivePeerDependencies:
       - supports-color
@@ -2104,6 +2154,7 @@ snapshots:
       '@typescript-eslint/typescript-estree': 5.59.2(typescript@5.0.4)
       debug: 4.3.4
       eslint: 8.39.0
+    optionalDependencies:
       typescript: 5.0.4
     transitivePeerDependencies:
       - supports-color
@@ -2120,6 +2171,7 @@ snapshots:
       debug: 4.3.4
       eslint: 8.39.0
       tsutils: 3.21.0(typescript@5.0.4)
+    optionalDependencies:
       typescript: 5.0.4
     transitivePeerDependencies:
       - supports-color
@@ -2135,6 +2187,7 @@ snapshots:
       is-glob: 4.0.3
       semver: 7.5.0
       tsutils: 3.21.0(typescript@5.0.4)
+    optionalDependencies:
       typescript: 5.0.4
     transitivePeerDependencies:
       - supports-color
@@ -3088,7 +3141,7 @@ snapshots:
       is-number: 7.0.0
 
   tsconfck@2.1.1(typescript@5.0.4):
-    dependencies:
+    optionalDependencies:
       typescript: 5.0.4
 
   tslib@1.14.1: {}
@@ -3145,14 +3198,13 @@ snapshots:
 
   validate-html-nesting@1.2.2: {}
 
-  vite-plugin-checker@0.5.6(eslint@8.39.0)(typescript@5.0.4)(vite@4.3.3):
+  vite-plugin-checker@0.5.6(eslint@8.39.0)(optionator@0.9.1)(typescript@5.0.4)(vite@4.3.3):
     dependencies:
       '@babel/code-frame': 7.21.4
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       chokidar: 3.5.3
       commander: 8.3.0
-      eslint: 8.39.0
       fast-glob: 3.2.12
       fs-extra: 11.1.1
       lodash.debounce: 4.0.8
@@ -3160,12 +3212,15 @@ snapshots:
       npm-run-path: 4.0.1
       strip-ansi: 6.0.1
       tiny-invariant: 1.3.1
-      typescript: 5.0.4
       vite: 4.3.3
       vscode-languageclient: 7.0.0
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.8
       vscode-uri: 3.0.7
+    optionalDependencies:
+      eslint: 8.39.0
+      optionator: 0.9.1
+      typescript: 5.0.4
 
   vite-plugin-eslint@1.8.1(eslint@8.39.0)(vite@4.3.3):
     dependencies:
@@ -3194,6 +3249,7 @@ snapshots:
       debug: 4.3.4
       globrex: 0.1.2
       tsconfck: 2.1.1(typescript@5.0.4)
+    optionalDependencies:
       vite: 4.3.3
     transitivePeerDependencies:
       - supports-color
@@ -3208,7 +3264,7 @@ snapshots:
       fsevents: 2.3.2
 
   vitefu@0.2.4(vite@4.3.3):
-    dependencies:
+    optionalDependencies:
       vite: 4.3.3
 
   vscode-jsonrpc@6.0.0: {}

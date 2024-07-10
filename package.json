@@ -11,6 +11,7 @@
     "lint": "eslint src"
   },
   "dependencies": {
+    "@solid-primitives/keyboard": "^1.2.8",
     "@solid-primitives/pointer": "^0.2.11",
     "@solid-primitives/reducer": "^0.0.101",
     "@solid-primitives/resize-observer": "^2.0.15",
