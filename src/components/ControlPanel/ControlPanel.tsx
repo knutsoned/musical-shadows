@@ -5,7 +5,6 @@ import { VsRecord } from 'solid-icons/vs';
 import { Component, createSignal, JSX, Match, Switch } from 'solid-js';
 
 import { SampleControls } from '../SampleControls/SampleControls';
-import { SampleExplorer } from '../SampleExplorer/SampleExplorer';
 import styles from './ControlPanel.module.css';
 
 const ControlPanelTabs = ['SAMPLE', 'EXPLORER', 'RECORD', 'EFFECT'] as const;
@@ -45,7 +44,7 @@ export const ControlPanel: Component = () => {
     >
       <div class="w-2rem">
         <ul class="w-full h-full flex flex-initial flex-column justify-content-evenly list-none">
-          {ControlPanelTabs.slice(0, 2).map((x, i) => (
+          {ControlPanelTabs.slice(0, 1).map((x, i) => (
             <li
               class={`flex-auto flex cursor-pointer border-50 border-right-1 ${
                 i ? 'border-top-1' : ''
@@ -64,9 +63,11 @@ export const ControlPanel: Component = () => {
           <Match when={activeTab() === 'SAMPLE'}>
             <SampleControls />
           </Match>
+          {/*
           <Match when={activeTab() === 'EXPLORER'}>
             <SampleExplorer />
           </Match>
+          */}
         </Switch>
       </div>
     </div>

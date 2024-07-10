@@ -12,7 +12,7 @@ export async function getGitHubFile(
   path: string,
 ): Promise<string> {
   const res = await fetch(
-    `https://api.github.com/repos/${owner}/${repo}/contents/${path}`,
+    `https://api.github.com/repos/${owner}/${repo}/contents/samples/${path}`,
     {
       headers: {
         'Content-Type': 'application/vnd.github.raw',

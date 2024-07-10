@@ -29,8 +29,8 @@ export abstract class DefaultSample {
 
 export class DirtSample extends DefaultSample {
   private async downloadDirtSample(): Promise<Blob> {
-    const owner = 'tidalcycles';
-    const repo = 'Dirt-Samples';
+    const owner = 'knutsoned';
+    const repo = 'soundbored';
     const b64 = await getGitHubFile(owner, repo, this.location);
     const decoded = Base64Binary.decodeArrayBuffer(b64);
     return new Blob([decoded], { type: 'audio/wav' });

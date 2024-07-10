@@ -22,11 +22,9 @@ export const HelpModal: Component<HelpModalProps> = (props) => (
   >
     <div class="grid">
       <div class="col">
-        <h2 class="pb-2">SoundBored</h2>
+        <h2 class="pb-2">Musical Shadows</h2>
         <div class="text-left">
           <div class="py-2">Trigger samples by hitting the pads</div>
-          <div class="py-2">Load new sounds from the sample explorer</div>
-          <div class="py-2">Record and upload your own samples</div>
         </div>
       </div>
     </div>
