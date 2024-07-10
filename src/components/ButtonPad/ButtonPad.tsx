@@ -1,6 +1,12 @@
 import { createPointerListeners } from '@solid-primitives/pointer';
 import { BiRegularPlay, BiRegularStop } from 'solid-icons/bi';
-import { Component, createEffect, createResource, JSX } from 'solid-js';
+import {
+  Accessor,
+  Component,
+  createEffect,
+  createResource,
+  JSX,
+} from 'solid-js';
 import { AudioCtx } from 'src/audio';
 import { AudioPlayerNode } from 'src/audio/AudioPlayerNode';
 import { SampleDropzone } from 'src/components';
@@ -12,6 +18,7 @@ import style from './ButtonPad.module.css';
 type ButtonPadProps = {
   model: SamplePlayer;
   onClick?: () => void;
+  playSelected: Accessor<boolean>;
   selected?: boolean;
 } & JSX.CustomAttributes<HTMLDivElement>;
 
@@ -87,6 +94,13 @@ export const ButtonPad: Component<ButtonPadProps> = (props) => {
       animate();
     }
   };
+
+  // play selected on signal receipt
+  createEffect(() => {
+    if (props.selected && props.playSelected()) {
+      handlePlay();
+    }
+  });
 
   const handleStop = (): void => {
     if (node && node.playing) {
