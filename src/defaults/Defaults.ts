@@ -11,6 +11,7 @@ export class Defaults {
     new DirtSample('24_TechNoir_ARP2600_G0.wav', 'G'),
     new DirtSample('24_TechNoir_ARP2600_A0.wav', 'A'),
     new DirtSample('24_TechNoir_ARP2600_B0.wav', 'B'),
+    new DirtSample('19_Sehnsucht_ARP2600_G-1', 'dummy'),
   ] as const;
 }
 
